@@ -12,11 +12,11 @@
 <body>
 
 <header class="header">
-    <img src="images/Asset 16@4x.png" class="logo" alt="Little Lemon Logo">
+    <img src="images/Asset1.png" class="logo" alt="Little Lemon Logo">
 </header>
 
 <nav class="navbar">
-<a href="index_little.html">Home</a>
+<a href="index1.html">Home</a>
 <div class="dropdown">
       <span class="dropdown-btn">Menu &#9662;</span>
       <div class="dropdown-content">
@@ -27,9 +27,9 @@
         <a href="#" class="filter-link" data-filter="cake">Desserts</a>
       </div>
 </div>
-<a href="index_little5.html">Book</a>
-<a href="index_little2.html">About</a>
-<a href="index_little4.html">Contacts</a>
+<a href="index5.html">Book</a>
+<a href="index2.html">About</a>
+<a href="index4.html">Contacts</a>
 </nav>
     
 <main>
@@ -247,7 +247,7 @@
                 </div>
               </div>
               <div class="menu_item" data-category="cake">
-                <img src="images/food/deserts/Banana caramel cream mini dessert.jpg"class="menu_img" alt="Deserts">
+                <img src="images/food/deserts/Banana.jpg"class="menu_img" alt="Deserts">
                 <div class="menu_item_text">
                 <h3 class="menu_h3">Banana caramel cream mini dessert</h3>
                 <h3 class="menu_price">€6.00</h3>
@@ -258,7 +258,7 @@
                 </div>
               </div>
               <div class="menu_item" data-category="cake">
-                <img src="images/food/deserts/Chocolate-sandwich-cupcakes-4b30ada.jpg"class="menu_img" alt="Deserts">
+                <img src="images/food/deserts/chokolat.jpg"class="menu_img" alt="Deserts">
                 <div class="menu_item_text">
                 <h3 class="menu_h3">Chocolate sandwich cupcakes</h3>
                 <h3 class="menu_price">€6.00</h3>
@@ -307,11 +307,11 @@
     <div class="last-right">
         <div class="navigation">
         <h4 class="right_h4">Quick Links</h4>
-        <a href="index_little.html">Home</a>
-        <a href="index_little3.html">Menu</a>
-        <a href="index_little5.html">Book</a>
-        <a href="index_little2.html">About</a>
-        <a href="index_little4.html">Contacts</a>
+        <a href="index1.html">Home</a>
+        <a href="index3.html">Menu</a>
+        <a href="index5.html">Book</a>
+        <a href="index2.html">About</a>
+        <a href="index4.html">Contacts</a>
         </div>
 
     <div class="social-icons">
@@ -333,7 +333,7 @@
     <div class="contact"> 
         <h4 class="right_h4">Contact Us</h4>
         <p class="contact_p">
-          Address: <a href="index_little4.html" class="contact_a">Royal Hibernian <br>Way Dublin 2,<br> Dublin D02 K772 Ireland</a>
+          Address: <a href="index4.html" class="contact_a">Royal Hibernian <br>Way Dublin 2,<br> Dublin D02 K772 Ireland</a>
         </p>
         <p class="contact_p">Phone: <a href="tel:+35312345678" class="contact_a">+353 1 234 5678</a></p>
         <p class="contact_p">Email: <a href="mailto:info@littlelemon.com" class="contact_a">info@littlelemon.com</a></p>
@@ -360,7 +360,7 @@
 
   filterLinks.forEach(link => {
     link.addEventListener('click', event => {
-      event.preventDefault(); // Prevents the page from jumping
+      event.preventDefault(); 
 
       const filter = link.getAttribute('data-filter').toLowerCase();
 
@@ -368,13 +368,13 @@
         const category = item.getAttribute('data-category').toLowerCase();
 
         if (filter === 'all' || category === filter) {
-          item.style.display = 'flex'; // Or 'block' depending on your layout
+          item.style.display = 'flex'; 
         } else {
           item.style.display = 'none';
         }
       });
 
-      // Update active class
+     
       filterLinks.forEach(l => l.classList.remove('active'));
       link.classList.add('active');
     });

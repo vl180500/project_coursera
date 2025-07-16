@@ -28,7 +28,6 @@ body {
   background-color: rgb(88, 121, 108);
   border-radius: 10px;
   position: sticky;
-  position: -webkit-sticky;
   z-index: 1000;
   top: 0;
 }
@@ -480,7 +479,7 @@ html {
 .about_content {
   display: flex;
   justify-content: space-between;
-  gap: 80px;
+  gap: 70px;
 }
 
 .about_img {
@@ -637,7 +636,7 @@ html {
   z-index: 1;
 }
 
-.reserv-l {
+.reserv-label {
   display: flex;
   flex-direction: column;
   z-index: 1;
@@ -648,7 +647,7 @@ html {
   background-color: whitesmoke;
 }
 
-.name-l, .select-l, .tel-l, .email-l, .date-l, .time-l {
+.name-label, .select-label, .tel-label, .email-label, .date-label, .time-label {
   font-size: 25px;
   font-weight: bold;
   color: white;

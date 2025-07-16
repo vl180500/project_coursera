@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon</title>
+    <link rel="stylesheet" href="styles/style_little.css">
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+    <img src="images/Asset1.png" class="logo" alt="Little Lemon Logo">
+</header>
+
+<nav class="navbar">
+<a href="index1.html">Home</a>
+<a href="index3.html">Menu</a>
+<a href="index5.html">Book</a>
+<a href="index2.html">About</a>
+<a href="index4.html">Contacts</a>
+</nav>
+    
+<main>
+  <section class="form_main">
+      <h2 class="form_h2">Reservation Form</h2>
+      <form class="reserv">
+        <div class="reserv-label">
+        <label for="text" class="name-label">Your Name</label>
+        <input class="name" type="text" placeholder="Type Name" required pattern="[A-Za-z\s]+">
+        </div>
+        <div class="reserv-label">
+        <label for="tel" class="tel-label">Phone Number</label>
+        <input class="tel" type="tel" placeholder="Type Number" required pattern="\d{10}">
+        </div>
+        <div class="reserv-label">
+        <label for="email" class="email-label" >Email</label>
+        <input class="email" type="email" placeholder="Type Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        </div>
+        <div class="reserv-label">
+        <label for="date" class="date-label" >Reservation Date</label>
+        <input class="date" type="date" name="date" required title="Select reservation date" placeholder="Select Date">
+        </div>
+        <div class="reserv-label">
+        <label for="time" class="time-label" >Reservation Time</label>
+        <input class="time" type="time" name="time" required title="Select reservation time" placeholder="Select Time">
+        </div>
+        <div class="reserv-label">
+        <label for="select" class="select-label" >Number of guests</label>
+        <select class="select" required title="Select number of guests">
+          <option value="">Number of Guests</option>
+          <option value="1">1</option> 
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4+">4+</option>
+        </select>
+        </div>
+        <button type="submit" class="reserv-btn">Book Now</button>
+      </form>
+        </div>
+   </section>
+
+
+    
+<section class="last">
+    <div class="last-left">
+              <p class="left_p">Join our newsletter to stay up to date on <br>our news and offers.</p>
+              <form action="subscribe">
+                <input type="email" name="email" class="email" id="email" placeholder="Enter Email" required 
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <input type="button" class="last_btn" value="Subscribe"><br>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox" class="check">I agree with Terms and Conditions</label>
+              </form>
+        </div>
+     <div class="last-right">
+        <div class="navigation">
+        <h4 class="right_h4">Quick Links</h4>
+        <a href="index1.html">Home</a>
+        <a href="index3.html">Menu</a>
+        <a href="index5.html">Book</a>
+        <a href="index2.html">About</a>
+        <a href="index4.html">Contacts</a>
+        </div>
+
+    <div class="social-icons">
+    <h4 class="right_h4">Follow Us</h4>
+  <a href="https://www.facebook.com/littlelemon" target="_blank" rel="noopener" aria-label="Facebook">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://www.instagram.com/littlelemon" target="_blank" rel="noopener" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://wa.me/littlelemon" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+  <a href="https://x.com/littlelemon" target="_blank" rel="noopener" aria-label="X ">
+    <i class="fab fa-x"></i>
+  </a>
+  </div>
+
+    <div class="contact"> 
+        <h4 class="right_h4">Contact Us</h4>
+        <p class="contact_p">
+          Address: <a href="index4.html" class="contact_a">Royal Hibernian <br>Way Dublin 2,<br> Dublin D02 K772 Ireland</a>
+        </p>
+        <p class="contact_p">Phone: <a href="tel:+35312345678" class="contact_a">+353 1 234 5678</a></p>
+        <p class="contact_p">Email: <a href="mailto:info@littlelemon.com" class="contact_a">info@littlelemon.com</a></p>
+    </div>
+
+    </div> 
+</section>
+</main>
+
+<footer class="footer">
+     <div class="footer-logo">
+        <img src="images/Asset2.png" class="foot_logo" alt="logo">
+    </div>
+    <div class="footer-info">
+        <div class="line"></div>
+            <p> Meta student project
+            &copy; 2025 Little Lemon</p>
+    </div>
+ </footer>
+
+<script>
+ </script>
+
+</body>
+</html>
