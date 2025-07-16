@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  .banner {
+    height: 150px;
+  }
+  .banner_h2 {
+    font-size: 35px;
+  }
+  .banner_h3 {
+    font-size: 30px;
+  }
+  .btn {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+}/*# sourceMappingURL=media.css.map */
